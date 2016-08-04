@@ -1,0 +1,800 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="weblogic (generated)" id="1470279691906-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="4"/>
+            <column name="REMARK" value="派克&#128020;排不稀奇，但對流浪他鄉的遊子們可以吃到家鄉味，這可是一大件事 。&#10;&#10;之前在台中就有吃過，印象是多汁帶點甜味，生為一個什麼食物都要加糖的台南人來說我是挺喜歡的，何況是在澳洲！一定要來試一下的!!&#10;&#10;剛進店時還沒很多人，但我們開始吃的時候就客滿了。幾乎都是華人居多（因為開在china town 嘛），其實也有看到幾個澳洲人在外面偷看但不敢走進來。&#10;下面是Menu&#10;對，你沒有看錯！"/>
+            <column name="ITEM_INFORMATION" value="派克雞排"/>
+            <column name="DEADLINE" valueDate="2016-06-12 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-08 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="c4004.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="5"/>
+            <column name="REMARK" value="創立「清心冷飲站」&#10;　　1987年3月8日，趙福全夫妻於台南市南區金華路二段巷弄內，創立「清心冷飲站」，設置一座簡易的吧檯，陳列茶桶、冰櫥、糖罐、杯子等器具，對外販售冷飲、冰品。其中「茶飲」最受消費者的青睞，當日燜煮新鮮且濃厚的熱茶汁，結合清透的衛生冰塊，加入適量的糖水，以調酒杯現場手工沖泡、調製，幻化成風味獨特的茶飲，提供消費者即時、沁涼的外帶飲品。而剛由調酒杯倒入飲用杯中的茶飲，茶湯上層漂浮&#10;首創「烏龍綠茶」&#10;　　茶葉無疑是茶飲的首要元素，趙福全先生經營「清心冷飲站」以來，不僅嚴選優質茶葉以製作茶飲，更多方試茶、品茶、評茶、配茶，精進沖泡、調製技術，參酌顧客回饋意見，以研發更多符合消費者口味的茶飲。1988年6月，成功推出台灣首創「烏龍綠茶」，澄澈的黃褐色茶湯，入口清新芳香、甘醇渾厚，微帶炭燒味，回甘則馥郁而綿長"/>
+            <column name="ITEM_INFORMATION" value="清新福全"/>
+            <column name="DEADLINE" valueDate="2016-06-26 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-08 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="images.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="2"/>
+            <column name="REMARK" value="宅配說明﻿&#10;本公司與統一速達黑貓宅急便合作低溫宅配&#10;請在結帳時【備註欄】填寫送達時段、希望到達日(自訂單日起不得小於4天、大於10天)。&#10;訂單成立7~10天內將為您完成出貨；商城系統為保障消費者權益，因此訂單商品不得逾期出貨，敬請見諒。&#10;黑貓提供時段性送達服務，無法在指定精準時間送達(例如：指定AM9:05精準送達)。&#10;配達時段可選擇為：上午(8:00~12:00)、下午(12:00~1"/>
+            <column name="ITEM_INFORMATION" value="Black As C"/>
+            <column name="DEADLINE" valueDate="2016-06-13 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-08 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="124472.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="3"/>
+            <column name="REMARK" value="千呼萬喚使出來之店內menu終於與大家見面拉！！&#10;第一版本的menu是我們精心為各位用餐者所精選調配的，同時、更維持不變的精神：要健康更要好吃！&#10;請大家品嚐後務必多多指教，讓左先生的西式廚房能做出您最滿意的餐點喔&#10;就是明天！Mr.Tsuo左先生的西式廚房正式開幕！&#10;謝謝各界朋友一直以來不吝嗇的指導，希望明天大家都會有個愉快滿意的用餐經驗喔。&#10;PS: Mr.Tsuo左先生的西式廚房也"/>
+            <column name="ITEM_INFORMATION" value="MR. TSUO "/>
+            <column name="DEADLINE" valueDate="2016-06-14 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-08 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="123676.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="6"/>
+            <column name="REMARK" value="lkedjlkasjdlasdjlasd"/>
+            <column name="ITEM_INFORMATION" value="默切義大利麵"/>
+            <column name="DEADLINE" valueDate="2016-06-10 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-08 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="122203.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="7"/>
+            <column name="REMARK" value="lksdjklsdjflsdf"/>
+            <column name="ITEM_INFORMATION" value="好喝咖啡"/>
+            <column name="DEADLINE" valueDate="2016-06-08 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-08 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="1233.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="9"/>
+            <column name="REMARK" value="宅配說明﻿&#10;本公司與統一速達黑貓宅急便合作低溫宅配&#10;請在結帳時【備註欄】填寫送達時段、希望到達日(自訂單日起不得小於4天、大於10天)。&#10;訂單成立7~10天內將為您完成出貨；商城系統為保障消費者權益，因此訂單商品不得逾期出貨，敬請見諒。&#10;黑貓提供時段性送達服務，無法在指定精準時間送達(例如：指定AM9:05精準送達)。&#10;配達時段可選擇為：上午(8:00~12:00)、下午(12:00~1"/>
+            <column name="ITEM_INFORMATION" value="Black As C"/>
+            <column name="DEADLINE" valueDate="2016-12-31 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-10 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="122203.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="1"/>
+            <column name="REMARK" value="超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷超好吃的雞排唷"/>
+            <column name="ITEM_INFORMATION" value="好吃唷"/>
+            <column name="DEADLINE" valueDate="2016-12-31 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-09 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="c4004.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="12"/>
+            <column name="REMARK" value="創立「清心冷飲站」&#10;　　1987年3月8日，趙福全夫妻於台南市南區金華路二段巷弄內，創立「清心冷飲站」，設置一座簡易的吧檯，陳列茶桶、冰櫥、糖罐、杯子等器具，對外販售冷飲、冰品。其中「茶飲」最受消費者的青睞，當日燜煮新鮮且濃厚的熱茶汁，結合清透的衛生冰塊，加入適量的糖水，以調酒杯現場手工沖泡、調製，幻化成風味獨特的茶飲，提供消費者即時、沁涼的外帶飲品。而剛由調酒杯倒入飲用杯中的茶飲，茶湯上層漂浮&#10;首創「烏龍綠茶」&#10;　　茶葉無疑是茶飲的首要元素，趙福全先生經營「清心冷飲站」以來，不僅嚴選優質茶葉以製作茶飲，更多方試茶、品茶、評茶、配茶，精進沖泡、調製技術，參酌顧客回饋意見，以研發更多符合消費者口味的茶飲。1988年6月，成功推出台灣首創「烏龍綠茶」，澄澈的黃褐色茶湯，入口清新芳香、甘醇渾厚，微帶炭燒味，回甘則馥郁而綿長"/>
+            <column name="ITEM_INFORMATION" value="清新福全"/>
+            <column name="DEADLINE" valueDate="2016-12-31 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-13 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="122203.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="10"/>
+            <column name="REMARK" value="宅配說明﻿&#10;本公司與統一速達黑貓宅急便合作低溫宅配&#10;請在結帳時【備註欄】填寫送達時段、希望到達日(自訂單日起不得小於4天、大於10天)。&#10;訂單成立7~10天內將為您完成出貨；商城系統為保障消費者權益，因此訂單商品不得逾期出貨，敬請見諒。&#10;黑貓提供時段性送達服務，無法在指定精準時間送達(例如：指定AM9:05精準送達)。&#10;配達時段可選擇為：上午(8:00~12:00)、下午(12:00~1"/>
+            <column name="ITEM_INFORMATION" value="Black As C"/>
+            <column name="DEADLINE" valueDate="2016-12-31 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-13 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="124094.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="11"/>
+            <column name="REMARK" value="創立「清心冷飲站」&#10;　　1987年3月8日，趙福全夫妻於台南市南區金華路二段巷弄內，創立「清心冷飲站」，設置一座簡易的吧檯，陳列茶桶、冰櫥、糖罐、杯子等器具，對外販售冷飲、冰品。其中「茶飲」最受消費者的青睞，當日燜煮新鮮且濃厚的熱茶汁，結合清透的衛生冰塊，加入適量的糖水，以調酒杯現場手工沖泡、調製，幻化成風味獨特的茶飲，提供消費者即時、沁涼的外帶飲品。而剛由調酒杯倒入飲用杯中的茶飲，茶湯上層漂浮&#10;首創「烏龍綠茶」&#10;　　茶葉無疑是茶飲的首要元素，趙福全先生經營「清心冷飲站」以來，不僅嚴選優質茶葉以製作茶飲，更多方試茶、品茶、評茶、配茶，精進沖泡、調製技術，參酌顧客回饋意見，以研發更多符合消費者口味的茶飲。1988年6月，成功推出台灣首創「烏龍綠茶」，澄澈的黃褐色茶湯，入口清新芳香、甘醇渾厚，微帶炭燒味，回甘則馥郁而綿長"/>
+            <column name="ITEM_INFORMATION" value="清新福全"/>
+            <column name="DEADLINE" valueDate="2016-12-31 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-13 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="358378.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="13"/>
+            <column name="REMARK" value="幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘"/>
+            <column name="ITEM_INFORMATION" value="幹您娘"/>
+            <column name="DEADLINE" valueDate="2016-12-31 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-13 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="122203.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="14"/>
+            <column name="REMARK" value="幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘"/>
+            <column name="ITEM_INFORMATION" value="幹您娘"/>
+            <column name="DEADLINE" valueDate="2016-05-31 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-13 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="124472.jpg"/>
+        </insert>
+        <insert tableName="BUILD_ORDER">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ORDER_NUMBER" value="8"/>
+            <column name="REMARK" value="創立「清心冷飲站」&#10;　　1987年3月8日，趙福全夫妻於台南市南區金華路二段巷弄內，創立「清心冷飲站」，設置一座簡易的吧檯，陳列茶桶、冰櫥、糖罐、杯子等器具，對外販售冷飲、冰品。其中「茶飲」最受消費者的青睞，當日燜煮新鮮且濃厚的熱茶汁，結合清透的衛生冰塊，加入適量的糖水，以調酒杯現場手工沖泡、調製，幻化成風味獨特的茶飲，提供消費者即時、沁涼的外帶飲品。而剛由調酒杯倒入飲用杯中的茶飲，茶湯上層漂浮&#10;首創「烏龍綠茶」&#10;　　茶葉無疑是茶飲的首要元素，趙福全先生經營「清心冷飲站」以來，不僅嚴選優質茶葉以製作茶飲，更多方試茶、品茶、評茶、配茶，精進沖泡、調製技術，參酌顧客回饋意見，以研發更多符合消費者口味的茶飲。1988年6月，成功推出台灣首創「烏龍綠茶」，澄澈的黃褐色茶湯，入口清新芳香、甘醇渾厚，微帶炭燒味，回甘則馥郁而綿長"/>
+            <column name="ITEM_INFORMATION" value="清新福全"/>
+            <column name="DEADLINE" valueDate="2016-12-31 00:00:00.0"/>
+            <column name="BUILD_TIME" valueDate="2016-06-10 00:00:00.0"/>
+            <column name="BUILD_STATE" value="live"/>
+            <column name="PICTURE" value="1233.jpg"/>
+        </insert>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279691906-2" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="焦糖香蕉巧克力蛋糕"/>
+            <column name="ITEM_NUMBER" value="5"/>
+            <column name="ORDER_NUMBER" value="2"/>
+            <column name="MAX" valueNumeric="500"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="250"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="Black As Chocolate"/>
+            <column name="ITEM_NUMBER" value="6"/>
+            <column name="ORDER_NUMBER" value="2"/>
+            <column name="MAX" valueNumeric="500"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="199"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="炭烤戰斧豬"/>
+            <column name="ITEM_NUMBER" value="7"/>
+            <column name="ORDER_NUMBER" value="3"/>
+            <column name="MAX" valueNumeric="300"/>
+            <column name="MIN" valueNumeric="20"/>
+            <column name="MONEY" valueNumeric="599"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="3.5吋經典巧克力蛋糕"/>
+            <column name="ITEM_NUMBER" value="3"/>
+            <column name="ORDER_NUMBER" value="2"/>
+            <column name="MAX" valueNumeric="500"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="299"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="3.5吋黑嘉侖草莓巧克力蛋糕"/>
+            <column name="ITEM_NUMBER" value="4"/>
+            <column name="ORDER_NUMBER" value="2"/>
+            <column name="MAX" valueNumeric="500"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="350"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="低溫烹調牛小排茶"/>
+            <column name="ITEM_NUMBER" value="8"/>
+            <column name="ORDER_NUMBER" value="3"/>
+            <column name="MAX" valueNumeric="300"/>
+            <column name="MIN" valueNumeric="20"/>
+            <column name="MONEY" valueNumeric="699"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="酥炸柳葉魚野菇燉飯"/>
+            <column name="ITEM_NUMBER" value="9"/>
+            <column name="ORDER_NUMBER" value="3"/>
+            <column name="MAX" valueNumeric="300"/>
+            <column name="MIN" valueNumeric="20"/>
+            <column name="MONEY" valueNumeric="299"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="野菇雞肉義大利麵"/>
+            <column name="ITEM_NUMBER" value="10"/>
+            <column name="ORDER_NUMBER" value="3"/>
+            <column name="MAX" valueNumeric="300"/>
+            <column name="MIN" valueNumeric="20"/>
+            <column name="MONEY" valueNumeric="99"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="脆皮雞排"/>
+            <column name="ITEM_NUMBER" value="11"/>
+            <column name="ORDER_NUMBER" value="4"/>
+            <column name="MAX" valueNumeric="799"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY" valueNumeric="50"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="脆皮雞塊"/>
+            <column name="ITEM_NUMBER" value="12"/>
+            <column name="ORDER_NUMBER" value="4"/>
+            <column name="MAX" valueNumeric="799"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY" valueNumeric="40"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="脆皮魷魚"/>
+            <column name="ITEM_NUMBER" value="13"/>
+            <column name="ORDER_NUMBER" value="4"/>
+            <column name="MAX" valueNumeric="799"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY" valueNumeric="65"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="脆皮薯條"/>
+            <column name="ITEM_NUMBER" value="14"/>
+            <column name="ORDER_NUMBER" value="4"/>
+            <column name="MAX" valueNumeric="799"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY" valueNumeric="25"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="義大利麵"/>
+            <column name="ITEM_NUMBER" value="20"/>
+            <column name="ORDER_NUMBER" value="6"/>
+            <column name="MAX" valueNumeric="50"/>
+            <column name="MIN" valueNumeric="20"/>
+            <column name="MONEY" valueNumeric="120"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="咖啡"/>
+            <column name="ITEM_NUMBER" value="21"/>
+            <column name="ORDER_NUMBER" value="7"/>
+            <column name="MAX" valueNumeric="50"/>
+            <column name="MIN" valueNumeric="20"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="5/10"/>
+            <column name="ICE" value="3/7/10"/>
+            <column name="SIZE" value="b/m/s"/>
+            <column name="BIG_PRICE" valueNumeric="50"/>
+            <column name="MID_PRICE" valueNumeric="40"/>
+            <column name="SMALL_PRICE" valueNumeric="30"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="3.5吋經典巧克力蛋糕"/>
+            <column name="ITEM_NUMBER" value="28"/>
+            <column name="ORDER_NUMBER" value="9"/>
+            <column name="MAX" valueNumeric="200"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="299"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="百香果綠"/>
+            <column name="ITEM_NUMBER" value="17"/>
+            <column name="ORDER_NUMBER" value="5"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="0/3/5/7"/>
+            <column name="ICE" value="0/10"/>
+            <column name="SIZE" value="b/m/s"/>
+            <column name="BIG_PRICE" valueNumeric="55"/>
+            <column name="MID_PRICE" valueNumeric="45"/>
+            <column name="SMALL_PRICE" valueNumeric="35"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="賣香三兄弟"/>
+            <column name="ITEM_NUMBER" value="18"/>
+            <column name="ORDER_NUMBER" value="5"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="0/5/7/10"/>
+            <column name="ICE" value="0/10"/>
+            <column name="SIZE" value="b/m/s"/>
+            <column name="BIG_PRICE" valueNumeric="10"/>
+            <column name="MID_PRICE" valueNumeric="5"/>
+            <column name="SMALL_PRICE" valueNumeric="3"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="3.5吋黑嘉侖草莓巧克力蛋糕"/>
+            <column name="ITEM_NUMBER" value="29"/>
+            <column name="ORDER_NUMBER" value="9"/>
+            <column name="MAX" valueNumeric="200"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="350"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="烏龍茶"/>
+            <column name="ITEM_NUMBER" value="15"/>
+            <column name="ORDER_NUMBER" value="5"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="5/7/10"/>
+            <column name="ICE" value="0/5"/>
+            <column name="SIZE" value="b/s"/>
+            <column name="BIG_PRICE" valueNumeric="35"/>
+            <column name="MID_PRICE" valueNumeric="30"/>
+            <column name="SMALL_PRICE" valueNumeric="25"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="奶綠"/>
+            <column name="ITEM_NUMBER" value="16"/>
+            <column name="ORDER_NUMBER" value="5"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="0/5/7/10"/>
+            <column name="ICE" value="0/10"/>
+            <column name="SIZE" value="b/m/s"/>
+            <column name="BIG_PRICE" valueNumeric="35"/>
+            <column name="MID_PRICE" valueNumeric="30"/>
+            <column name="SMALL_PRICE" valueNumeric="25"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="焦糖香蕉巧克力蛋糕"/>
+            <column name="ITEM_NUMBER" value="26"/>
+            <column name="ORDER_NUMBER" value="9"/>
+            <column name="MAX" valueNumeric="200"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="250"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="Black As Chocolate"/>
+            <column name="ITEM_NUMBER" value="27"/>
+            <column name="ORDER_NUMBER" value="9"/>
+            <column name="MAX" valueNumeric="200"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="199"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="焦糖香蕉巧克力蛋糕"/>
+            <column name="ITEM_NUMBER" value="32"/>
+            <column name="ORDER_NUMBER" value="10"/>
+            <column name="MAX" valueNumeric="200"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="250"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="3.5吋經典巧克力蛋糕"/>
+            <column name="ITEM_NUMBER" value="30"/>
+            <column name="ORDER_NUMBER" value="10"/>
+            <column name="MAX" valueNumeric="200"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="299"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="3.5吋黑嘉侖草莓巧克力蛋糕"/>
+            <column name="ITEM_NUMBER" value="31"/>
+            <column name="ORDER_NUMBER" value="10"/>
+            <column name="MAX" valueNumeric="200"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="350"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="Black As Chocolate"/>
+            <column name="ITEM_NUMBER" value="33"/>
+            <column name="ORDER_NUMBER" value="10"/>
+            <column name="MAX" valueNumeric="200"/>
+            <column name="MIN" valueNumeric="200"/>
+            <column name="MONEY" valueNumeric="199"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="烏龍茶"/>
+            <column name="ITEM_NUMBER" value="34"/>
+            <column name="ORDER_NUMBER" value="11"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="0/7/10"/>
+            <column name="ICE" value="0/7/10"/>
+            <column name="SIZE" value="b/m/s"/>
+            <column name="BIG_PRICE" valueNumeric="35"/>
+            <column name="MID_PRICE" valueNumeric="30"/>
+            <column name="SMALL_PRICE" valueNumeric="25"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="百香果綠"/>
+            <column name="ITEM_NUMBER" value="35"/>
+            <column name="ORDER_NUMBER" value="11"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="5/7/10"/>
+            <column name="ICE" value="0/3/10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="55"/>
+            <column name="MID_PRICE" valueNumeric="45"/>
+            <column name="SMALL_PRICE" valueNumeric="35"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="奶綠"/>
+            <column name="ITEM_NUMBER" value="36"/>
+            <column name="ORDER_NUMBER" value="11"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="3/5/10"/>
+            <column name="ICE" value="0/3/10"/>
+            <column name="SIZE" value="b/m/s"/>
+            <column name="BIG_PRICE" valueNumeric="35"/>
+            <column name="MID_PRICE" valueNumeric="30"/>
+            <column name="SMALL_PRICE" valueNumeric="25"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="賣香三兄弟"/>
+            <column name="ITEM_NUMBER" value="37"/>
+            <column name="ORDER_NUMBER" value="11"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="3/5/10"/>
+            <column name="ICE" value="0/3/10"/>
+            <column name="SIZE" value="b/m/s"/>
+            <column name="BIG_PRICE" valueNumeric="10"/>
+            <column name="MID_PRICE" valueNumeric="10"/>
+            <column name="SMALL_PRICE" valueNumeric="10"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="百香果綠"/>
+            <column name="ITEM_NUMBER" value="38"/>
+            <column name="ORDER_NUMBER" value="12"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="10"/>
+            <column name="ICE" value="10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="55"/>
+            <column name="MID_PRICE" valueNumeric="45"/>
+            <column name="SMALL_PRICE" valueNumeric="35"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="賣香三兄弟"/>
+            <column name="ITEM_NUMBER" value="39"/>
+            <column name="ORDER_NUMBER" value="12"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="10"/>
+            <column name="ICE" value="0/3/5/7/10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="10"/>
+            <column name="MID_PRICE" valueNumeric="10"/>
+            <column name="SMALL_PRICE" valueNumeric="10"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="烏龍茶"/>
+            <column name="ITEM_NUMBER" value="40"/>
+            <column name="ORDER_NUMBER" value="12"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="10"/>
+            <column name="ICE" value="10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="35"/>
+            <column name="MID_PRICE" valueNumeric="30"/>
+            <column name="SMALL_PRICE" valueNumeric="25"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="奶綠"/>
+            <column name="ITEM_NUMBER" value="41"/>
+            <column name="ORDER_NUMBER" value="12"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="10"/>
+            <column name="ICE" value="10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="35"/>
+            <column name="MID_PRICE" valueNumeric="30"/>
+            <column name="SMALL_PRICE" valueNumeric="25"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="幹您娘"/>
+            <column name="ITEM_NUMBER" value="42"/>
+            <column name="ORDER_NUMBER" value="13"/>
+            <column name="MAX" valueNumeric="50"/>
+            <column name="MIN" valueNumeric="10"/>
+            <column name="MONEY" valueNumeric="10"/>
+            <column name="SUGER"/>
+            <column name="ICE"/>
+            <column name="SIZE"/>
+            <column name="BIG_PRICE"/>
+            <column name="MID_PRICE"/>
+            <column name="SMALL_PRICE"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="幹您娘"/>
+            <column name="ITEM_NUMBER" value="43"/>
+            <column name="ORDER_NUMBER" value="14"/>
+            <column name="MAX" valueNumeric="50"/>
+            <column name="MIN" valueNumeric="10"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="0/3/5/7/10"/>
+            <column name="ICE" value="0/3/5/7/10"/>
+            <column name="SIZE" value="b/m/s"/>
+            <column name="BIG_PRICE" valueNumeric="10"/>
+            <column name="MID_PRICE" valueNumeric="10"/>
+            <column name="SMALL_PRICE" valueNumeric="10"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="幹您娘"/>
+            <column name="ITEM_NUMBER" value="44"/>
+            <column name="ORDER_NUMBER" value="14"/>
+            <column name="MAX" valueNumeric="50"/>
+            <column name="MIN" valueNumeric="10"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="3/5/10"/>
+            <column name="ICE" value="10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="13"/>
+            <column name="MID_PRICE" valueNumeric="12"/>
+            <column name="SMALL_PRICE" valueNumeric="10"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="烏龍茶"/>
+            <column name="ITEM_NUMBER" value="24"/>
+            <column name="ORDER_NUMBER" value="8"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="10"/>
+            <column name="ICE" value="3/5/10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="35"/>
+            <column name="MID_PRICE" valueNumeric="30"/>
+            <column name="SMALL_PRICE" valueNumeric="25"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="百香果綠"/>
+            <column name="ITEM_NUMBER" value="22"/>
+            <column name="ORDER_NUMBER" value="8"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="10"/>
+            <column name="ICE" value="10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="55"/>
+            <column name="MID_PRICE" valueNumeric="45"/>
+            <column name="SMALL_PRICE" valueNumeric="35"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="奶綠"/>
+            <column name="ITEM_NUMBER" value="25"/>
+            <column name="ORDER_NUMBER" value="8"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="10"/>
+            <column name="ICE" value="3/5/10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="35"/>
+            <column name="MID_PRICE" valueNumeric="30"/>
+            <column name="SMALL_PRICE" valueNumeric="25"/>
+        </insert>
+        <insert tableName="ITEM_INFORMATION">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="NAME" value="賣香三兄弟"/>
+            <column name="ITEM_NUMBER" value="23"/>
+            <column name="ORDER_NUMBER" value="8"/>
+            <column name="MAX" valueNumeric="150"/>
+            <column name="MIN" valueNumeric="30"/>
+            <column name="MONEY"/>
+            <column name="SUGER" value="10"/>
+            <column name="ICE" value="10"/>
+            <column name="SIZE" value="b"/>
+            <column name="BIG_PRICE" valueNumeric="10"/>
+            <column name="MID_PRICE" valueNumeric="10"/>
+            <column name="SMALL_PRICE" valueNumeric="10"/>
+        </insert>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279691906-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="USER_DATA">
+            <column name="USER_ID" valueNumeric="0"/>
+            <column name="ACCOUNT" value="root"/>
+            <column name="PASSWORD" value="root"/>
+            <column name="NAME" value="root"/>
+            <column name="PHONE"/>
+            <column name="EMAIL"/>
+            <column name="MONEY"/>
+        </insert>
+        <insert tableName="USER_DATA">
+            <column name="USER_ID" valueNumeric="3"/>
+            <column name="ACCOUNT" value="user123"/>
+            <column name="PASSWORD" value="user123"/>
+            <column name="NAME" value="我超帥"/>
+            <column name="PHONE" value="02235444545"/>
+            <column name="EMAIL" value="kuhsd@gmail.com"/>
+            <column name="MONEY" valueNumeric="6664"/>
+        </insert>
+        <insert tableName="USER_DATA">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ACCOUNT" value="hrhrhr"/>
+            <column name="PASSWORD" value="hrhrhr"/>
+            <column name="NAME" value="hrhrhr"/>
+            <column name="PHONE" value="09123456789"/>
+            <column name="EMAIL" value="515sw@51151.wqewq"/>
+            <column name="MONEY" valueNumeric="500"/>
+        </insert>
+        <insert tableName="USER_DATA">
+            <column name="USER_ID" valueNumeric="2"/>
+            <column name="ACCOUNT" value="abc123"/>
+            <column name="PASSWORD" value="abc123"/>
+            <column name="NAME" value="超帥的"/>
+            <column name="PHONE" value="09123456789"/>
+            <column name="EMAIL" value="wsx5555@eeeee.qqqq"/>
+            <column name="MONEY" valueNumeric="500"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

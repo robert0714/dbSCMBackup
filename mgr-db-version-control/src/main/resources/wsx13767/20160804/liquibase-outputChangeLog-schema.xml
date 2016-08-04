@@ -1,0 +1,156 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="weblogic (generated)" id="1470279453155-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" maxValue="9999999999999999999999999999" minValue="1" ordered="false" sequenceName="ADLIDSEQUENCE" startValue="3301"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-2" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" maxValue="9999999999999999999999999999" minValue="1" ordered="false" sequenceName="AULIDSEQUENCE" startValue="81"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" maxValue="9999999999999999999999999999" minValue="1" ordered="false" sequenceName="PALIDSEQUENCE" startValue="21"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-4" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" maxValue="9999999999999999999999999999" minValue="1" ordered="false" sequenceName="PBLIDSEQUENCE" startValue="21"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-5" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" maxValue="9999999999999999999999999999" minValue="1" ordered="false" sequenceName="PCLIDSEQUENCE" startValue="21"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-6" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" maxValue="9999999999999999999999999999" minValue="1" ordered="false" sequenceName="PDLIDSEQUENCE" startValue="21"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-7" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" maxValue="9999999999999999999999999999" minValue="1" ordered="false" sequenceName="PELIDSEQUENCE" startValue="41"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-8" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" maxValue="9999999999999999999999999999" minValue="1" ordered="false" sequenceName="PFLIDSEQUENCE" startValue="41"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-9" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" maxValue="9999999999999999999999999999" minValue="1" ordered="false" sequenceName="PGLIDSEQUENCE" startValue="21"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-10" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="BUILD_ORDER">
+            <column name="USER_ID" type="NUMBER(5, 0)"/>
+            <column name="ORDER_NUMBER" type="VARCHAR2(12 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="REMARK" type="VARCHAR2(1600 BYTE)"/>
+            <column name="ITEM_INFORMATION" type="VARCHAR2(350 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DEADLINE" type="date"/>
+            <column name="BUILD_TIME" type="date"/>
+            <column name="BUILD_STATE" type="VARCHAR2(32 BYTE)"/>
+            <column name="PICTURE" type="VARCHAR2(2000 BYTE)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-11" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="CASH_LOG">
+            <column name="USER_ID" type="NUMBER(5, 0)"/>
+            <column name="LOG_NUMBER" type="VARCHAR2(12 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TIME" type="date"/>
+            <column name="MONEY" type="NUMBER(4, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-12" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="ITEM_INFORMATION">
+            <column name="USER_ID" type="NUMBER(5, 0)"/>
+            <column name="NAME" type="VARCHAR2(80 BYTE)"/>
+            <column name="ITEM_NUMBER" type="VARCHAR2(12 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORDER_NUMBER" type="VARCHAR2(12 BYTE)"/>
+            <column name="MAX" type="NUMBER(3, 0)"/>
+            <column name="MIN" type="NUMBER(3, 0)"/>
+            <column name="MONEY" type="NUMBER(4, 0)"/>
+            <column name="SUGER" type="VARCHAR2(10 BYTE)"/>
+            <column name="ICE" type="VARCHAR2(10 BYTE)"/>
+            <column name="SIZE" type="VARCHAR2(10 BYTE)"/>
+            <column name="BIG_PRICE" type="NUMBER(4, 0)"/>
+            <column name="MID_PRICE" type="NUMBER(4, 0)"/>
+            <column name="SMALL_PRICE" type="NUMBER(4, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-13" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="JOIN_ORDER">
+            <column name="JOIN_LOG" type="VARCHAR2(12 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORDER_NUMBER" type="VARCHAR2(12 BYTE)"/>
+            <column name="ITEM_NUMBER" type="VARCHAR2(12 BYTE)"/>
+            <column name="COUNT" type="NUMBER(4, 0)"/>
+            <column name="JOIN_TIME" type="date"/>
+            <column name="GET" type="NUMBER(1, 0)"/>
+            <column name="USER_ID" type="NUMBER(5, 0)"/>
+            <column name="MONEY" type="NUMBER(7, 0)"/>
+            <column name="SIZE" type="VARCHAR2(10 BYTE)"/>
+            <column name="SUGER" type="VARCHAR2(10 BYTE)"/>
+            <column name="ICE" type="VARCHAR2(10 BYTE)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-14" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="USER_DATA">
+            <column name="USER_ID" type="NUMBER(5, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ACCOUNT" type="VARCHAR2(60 BYTE)"/>
+            <column name="PASSWORD" type="VARCHAR2(60 BYTE)"/>
+            <column name="NAME" type="VARCHAR2(20 BYTE)"/>
+            <column name="PHONE" type="VARCHAR2(15 BYTE)"/>
+            <column name="EMAIL" type="VARCHAR2(320 BYTE)"/>
+            <column name="MONEY" type="NUMBER(4, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-15" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="SYS_C009976" tableName="BUILD_ORDER" unique="true">
+            <column name="ORDER_NUMBER"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ORDER_NUMBER" constraintName="SYS_C0031912" forIndexName="SYS_C009976" tableName="BUILD_ORDER"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-16" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="SYS_C009974" tableName="CASH_LOG" unique="true">
+            <column name="LOG_NUMBER"/>
+        </createIndex>
+        <addPrimaryKey columnNames="LOG_NUMBER" constraintName="SYS_C0031914" forIndexName="SYS_C009974" tableName="CASH_LOG"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-17" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="SYS_C009978" tableName="ITEM_INFORMATION" unique="true">
+            <column name="ITEM_NUMBER"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ITEM_NUMBER" constraintName="SYS_C0031916" forIndexName="SYS_C009978" tableName="ITEM_INFORMATION"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-18" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="SYS_C009980" tableName="JOIN_ORDER" unique="true">
+            <column name="JOIN_LOG"/>
+        </createIndex>
+        <addPrimaryKey columnNames="JOIN_LOG" constraintName="SYS_C0031918" forIndexName="SYS_C009980" tableName="JOIN_ORDER"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-19" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="SYS_C009972" tableName="USER_DATA" unique="true">
+            <column name="USER_ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="USER_ID" constraintName="SYS_C0031920" forIndexName="SYS_C009972" tableName="USER_DATA"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-20" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="USER_ID" baseTableName="BUILD_ORDER" constraintName="BUILD_ORDER_USER_DATA_FK1" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="USER_ID" referencedTableName="USER_DATA"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-21" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="USER_ID" baseTableName="CASH_LOG" constraintName="CASH_LOG_USER_DATA_FK1" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="USER_ID" referencedTableName="USER_DATA"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-22" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="ORDER_NUMBER" baseTableName="ITEM_INFORMATION" constraintName="ITEM_INFORMATION_BUILD_OR_FK1" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ORDER_NUMBER" referencedTableName="BUILD_ORDER"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-23" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="USER_ID" baseTableName="ITEM_INFORMATION" constraintName="ITEM_INFORMATION_USER_DAT_FK1" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="USER_ID" referencedTableName="USER_DATA"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-24" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="ORDER_NUMBER" baseTableName="JOIN_ORDER" constraintName="JOIN_ORDER_BUILD_ORDER_FK1" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ORDER_NUMBER" referencedTableName="BUILD_ORDER"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-25" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="ITEM_NUMBER" baseTableName="JOIN_ORDER" constraintName="JOIN_ORDER_ITEM_INFORMATI_FK1" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ITEM_NUMBER" referencedTableName="ITEM_INFORMATION"/>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470279453155-26" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="USER_ID" baseTableName="JOIN_ORDER" constraintName="JOIN_ORDER_USER_DATA_FK1" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="USER_ID" referencedTableName="USER_DATA"/>
+    </changeSet>
+</databaseChangeLog>
