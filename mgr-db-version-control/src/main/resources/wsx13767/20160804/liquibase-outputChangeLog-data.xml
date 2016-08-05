@@ -1,5 +1,43 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+   <changeSet author="weblogic (generated)" id="1470279691906-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="USER_DATA">
+            <column name="USER_ID" valueNumeric="0"/>
+            <column name="ACCOUNT" value="root"/>
+            <column name="PASSWORD" value="root"/>
+            <column name="NAME" value="root"/>
+            <column name="PHONE"/>
+            <column name="EMAIL"/>
+            <column name="MONEY"/>
+        </insert>
+        <insert tableName="USER_DATA">
+            <column name="USER_ID" valueNumeric="3"/>
+            <column name="ACCOUNT" value="user123"/>
+            <column name="PASSWORD" value="user123"/>
+            <column name="NAME" value="我超帥"/>
+            <column name="PHONE" value="02235444545"/>
+            <column name="EMAIL" value="kuhsd@gmail.com"/>
+            <column name="MONEY" valueNumeric="6664"/>
+        </insert>
+        <insert tableName="USER_DATA">
+            <column name="USER_ID" valueNumeric="1"/>
+            <column name="ACCOUNT" value="hrhrhr"/>
+            <column name="PASSWORD" value="hrhrhr"/>
+            <column name="NAME" value="hrhrhr"/>
+            <column name="PHONE" value="09123456789"/>
+            <column name="EMAIL" value="515sw@51151.wqewq"/>
+            <column name="MONEY" valueNumeric="500"/>
+        </insert>
+        <insert tableName="USER_DATA">
+            <column name="USER_ID" valueNumeric="2"/>
+            <column name="ACCOUNT" value="abc123"/>
+            <column name="PASSWORD" value="abc123"/>
+            <column name="NAME" value="超帥的"/>
+            <column name="PHONE" value="09123456789"/>
+            <column name="EMAIL" value="wsx5555@eeeee.qqqq"/>
+            <column name="MONEY" valueNumeric="500"/>
+        </insert>
+    </changeSet>
     <changeSet author="weblogic (generated)" id="1470279691906-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
         <insert tableName="BUILD_ORDER">
             <column name="USER_ID" valueNumeric="1"/>
@@ -759,42 +797,5 @@
             <column name="SMALL_PRICE" valueNumeric="10"/>
         </insert>
     </changeSet>
-    <changeSet author="weblogic (generated)" id="1470279691906-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-        <insert tableName="USER_DATA">
-            <column name="USER_ID" valueNumeric="0"/>
-            <column name="ACCOUNT" value="root"/>
-            <column name="PASSWORD" value="root"/>
-            <column name="NAME" value="root"/>
-            <column name="PHONE"/>
-            <column name="EMAIL"/>
-            <column name="MONEY"/>
-        </insert>
-        <insert tableName="USER_DATA">
-            <column name="USER_ID" valueNumeric="3"/>
-            <column name="ACCOUNT" value="user123"/>
-            <column name="PASSWORD" value="user123"/>
-            <column name="NAME" value="我超帥"/>
-            <column name="PHONE" value="02235444545"/>
-            <column name="EMAIL" value="kuhsd@gmail.com"/>
-            <column name="MONEY" valueNumeric="6664"/>
-        </insert>
-        <insert tableName="USER_DATA">
-            <column name="USER_ID" valueNumeric="1"/>
-            <column name="ACCOUNT" value="hrhrhr"/>
-            <column name="PASSWORD" value="hrhrhr"/>
-            <column name="NAME" value="hrhrhr"/>
-            <column name="PHONE" value="09123456789"/>
-            <column name="EMAIL" value="515sw@51151.wqewq"/>
-            <column name="MONEY" valueNumeric="500"/>
-        </insert>
-        <insert tableName="USER_DATA">
-            <column name="USER_ID" valueNumeric="2"/>
-            <column name="ACCOUNT" value="abc123"/>
-            <column name="PASSWORD" value="abc123"/>
-            <column name="NAME" value="超帥的"/>
-            <column name="PHONE" value="09123456789"/>
-            <column name="EMAIL" value="wsx5555@eeeee.qqqq"/>
-            <column name="MONEY" valueNumeric="500"/>
-        </insert>
-    </changeSet>
+    
 </databaseChangeLog>

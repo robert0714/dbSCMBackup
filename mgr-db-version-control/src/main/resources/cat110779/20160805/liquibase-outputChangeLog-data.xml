@@ -1,0 +1,528 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="weblogic (generated)" id="1470364485704-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="ITEM">
+            <column name="ID" valueNumeric="57121"/>
+            <column name="PRODUCT_ID" valueNumeric="8"/>
+            <column name="ORDER_ID" valueNumeric="72379"/>
+            <column name="PRODUCT_NAME" value="黃金排骨飯"/>
+        </insert>
+        <insert tableName="ITEM">
+            <column name="ID" valueNumeric="32343"/>
+            <column name="PRODUCT_ID" valueNumeric="9"/>
+            <column name="ORDER_ID" valueNumeric="72379"/>
+            <column name="PRODUCT_NAME" value="二男海鮮丼"/>
+        </insert>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470364485704-2" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="2"/>
+            <column name="ACCOUNT" value="admin"/>
+            <column name="PASSWORD" value="admin"/>
+            <column name="EMAIL" value="admin@gmail.com"/>
+            <column name="CASH" valueNumeric="8315"/>
+            <column name="CREATE_DATE" valueDate="2016-05-23 14:01:09.55"/>
+            <column name="M_TYPE" value="高級會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="20"/>
+            <column name="ACCOUNT" value="fju"/>
+            <column name="PASSWORD" value="fju"/>
+            <column name="EMAIL" value="nomad341725@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-06-04 21:34:46.398"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="23"/>
+            <column name="ACCOUNT" value="aaa"/>
+            <column name="PASSWORD" value="aaa"/>
+            <column name="EMAIL" value="nomad341725@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-06-06 14:37:24.477"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="17"/>
+            <column name="ACCOUNT" value="gundam"/>
+            <column name="PASSWORD" value="gun"/>
+            <column name="EMAIL" value="gundam"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-06-04 20:48:39.558"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="12"/>
+            <column name="ACCOUNT" value="Dasein"/>
+            <column name="PASSWORD" value="being"/>
+            <column name="EMAIL" value="Dasein"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-05-27 14:26:32.414"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="15"/>
+            <column name="ACCOUNT" value="a183"/>
+            <column name="PASSWORD" value="123123"/>
+            <column name="EMAIL" value="a183cute33@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-05-27 17:08:28.859"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="16"/>
+            <column name="ACCOUNT" value="moon"/>
+            <column name="PASSWORD" value="moon"/>
+            <column name="EMAIL" value="nomad341725@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-06-04 20:45:15.983"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="26"/>
+            <column name="ACCOUNT" value="jeffery"/>
+            <column name="PASSWORD" value="123"/>
+            <column name="EMAIL" value="1231@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-06-07 20:19:58.578"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="6"/>
+            <column name="ACCOUNT" value="rain"/>
+            <column name="PASSWORD" value="RR54qy"/>
+            <column name="EMAIL" value="nomad341725@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-05-27 03:10:50.682"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="8"/>
+            <column name="ACCOUNT" value="rainy"/>
+            <column name="PASSWORD" value="rainy"/>
+            <column name="EMAIL" value="rainy"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-05-27 03:27:33.999"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="25"/>
+            <column name="ACCOUNT" value="cypher"/>
+            <column name="PASSWORD" value="cypher"/>
+            <column name="EMAIL" value="nomad341725@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-06-07 16:09:13.633"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="11"/>
+            <column name="ACCOUNT" value="sun"/>
+            <column name="PASSWORD" value="sun"/>
+            <column name="EMAIL" value="sun"/>
+            <column name="CASH" valueNumeric="420"/>
+            <column name="CREATE_DATE" valueDate="2016-05-27 03:30:12.094"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="22"/>
+            <column name="ACCOUNT" value="zeit"/>
+            <column name="PASSWORD" value="zeit"/>
+            <column name="EMAIL" value="nomad341725@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-06-05 13:13:20.779"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="27"/>
+            <column name="ACCOUNT" value="hddoddiod"/>
+            <column name="PASSWORD" value="123"/>
+            <column name="EMAIL" value="djdddjj@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-06-07 20:21:28.626"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+        <insert tableName="MEMBER">
+            <column name="ID" valueNumeric="33"/>
+            <column name="ACCOUNT" value="jeffery840106"/>
+            <column name="PASSWORD" value="51RO5752"/>
+            <column name="EMAIL" value="a183cute33@gmail.com"/>
+            <column name="CASH" valueNumeric="0"/>
+            <column name="CREATE_DATE" valueDate="2016-06-07 20:47:07.947"/>
+            <column name="M_TYPE" value="一般會員"/>
+        </insert>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470364485704-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="22826"/>
+            <column name="RESTAURANT_ID" valueNumeric="2"/>
+            <column name="BEGIN_TIME" valueDate="2016-08-04 16:38:58.676"/>
+            <column name="END_TIME" valueDate="2016-08-04 17:38:00.0"/>
+            <column name="END_MONEY" valueNumeric="66666"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="進行中"/>
+            <column name="INFO" value="ssssss"/>
+            <column name="RESTAURANT_NAME" value="悟饕池上飯包"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="36234"/>
+            <column name="RESTAURANT_ID" valueNumeric="3"/>
+            <column name="BEGIN_TIME" valueDate="2016-08-04 16:33:49.928"/>
+            <column name="END_TIME" valueDate="2016-08-18 17:33:00.0"/>
+            <column name="END_MONEY" valueNumeric="1111"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="進行中"/>
+            <column name="INFO" value="11111"/>
+            <column name="RESTAURANT_NAME" value="二男小家料理"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="72379"/>
+            <column name="RESTAURANT_ID" valueNumeric="3"/>
+            <column name="BEGIN_TIME" valueDate="2016-08-04 16:35:37.438"/>
+            <column name="END_TIME" valueDate="2016-08-04 17:35:00.0"/>
+            <column name="END_MONEY" valueNumeric="2"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="進行中"/>
+            <column name="INFO" value="2222"/>
+            <column name="RESTAURANT_NAME" value="二男小家料理"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="68688"/>
+            <column name="RESTAURANT_ID" valueNumeric="2"/>
+            <column name="BEGIN_TIME" valueDate="2016-08-04 16:37:16.277"/>
+            <column name="END_TIME" valueDate="2016-08-04 17:37:00.0"/>
+            <column name="END_MONEY" valueNumeric="111"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="進行中"/>
+            <column name="INFO" value="e"/>
+            <column name="RESTAURANT_NAME" value="悟饕池上飯包"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="121"/>
+            <column name="RESTAURANT_ID" valueNumeric="7"/>
+            <column name="BEGIN_TIME" valueDate="2016-06-08 20:12:59.527"/>
+            <column name="END_TIME" valueDate="2016-06-08 21:12:00.0"/>
+            <column name="END_MONEY" valueNumeric="100"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="已結單"/>
+            <column name="INFO"/>
+            <column name="RESTAURANT_NAME" value="鬍鬚張"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="122"/>
+            <column name="RESTAURANT_ID" valueNumeric="10"/>
+            <column name="BEGIN_TIME" valueDate="2016-06-08 20:14:01.165"/>
+            <column name="END_TIME" valueDate="2016-06-08 21:13:00.0"/>
+            <column name="END_MONEY" valueNumeric="500"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="已結單"/>
+            <column name="INFO"/>
+            <column name="RESTAURANT_NAME" value="魏姐包心粉圓"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="123"/>
+            <column name="RESTAURANT_ID" valueNumeric="1"/>
+            <column name="BEGIN_TIME" valueDate="2016-06-09 01:30:25.807"/>
+            <column name="END_TIME" valueDate="2016-06-09 02:30:00.0"/>
+            <column name="END_MONEY" valueNumeric="300"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="已結單"/>
+            <column name="INFO"/>
+            <column name="RESTAURANT_NAME" value="麥當勞"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="124"/>
+            <column name="RESTAURANT_ID" valueNumeric="1"/>
+            <column name="BEGIN_TIME" valueDate="2016-06-13 21:57:05.925"/>
+            <column name="END_TIME" valueDate="2016-06-13 22:56:00.0"/>
+            <column name="END_MONEY" valueNumeric="100"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="已結單"/>
+            <column name="INFO"/>
+            <column name="RESTAURANT_NAME" value="麥當勞"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="120"/>
+            <column name="RESTAURANT_ID" valueNumeric="7"/>
+            <column name="BEGIN_TIME" valueDate="2016-06-08 20:06:32.872"/>
+            <column name="END_TIME" valueDate="2016-06-08 21:05:00.0"/>
+            <column name="END_MONEY" valueNumeric="700"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="已結單"/>
+            <column name="INFO"/>
+            <column name="RESTAURANT_NAME" value="鬍鬚張"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="118"/>
+            <column name="RESTAURANT_ID" valueNumeric="10"/>
+            <column name="BEGIN_TIME" valueDate="2016-06-08 12:52:51.228"/>
+            <column name="END_TIME" valueDate="2016-06-08 13:52:00.0"/>
+            <column name="END_MONEY" valueNumeric="100"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="已截止"/>
+            <column name="INFO"/>
+            <column name="RESTAURANT_NAME" value="魏姐包心粉圓"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="119"/>
+            <column name="RESTAURANT_ID" valueNumeric="1"/>
+            <column name="BEGIN_TIME" valueDate="2016-06-08 14:27:32.222"/>
+            <column name="END_TIME" valueDate="2016-06-08 15:27:00.0"/>
+            <column name="END_MONEY" valueNumeric="500"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="已截止"/>
+            <column name="INFO"/>
+            <column name="RESTAURANT_NAME" value="麥當勞"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="116"/>
+            <column name="RESTAURANT_ID" valueNumeric="2"/>
+            <column name="BEGIN_TIME" valueDate="2016-06-08 12:52:27.407"/>
+            <column name="END_TIME" valueDate="2016-06-08 13:52:00.0"/>
+            <column name="END_MONEY" valueNumeric="100"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="已截止"/>
+            <column name="INFO"/>
+            <column name="RESTAURANT_NAME" value="悟饕池上飯包"/>
+        </insert>
+        <insert tableName="ORDERS">
+            <column name="ID" valueNumeric="117"/>
+            <column name="RESTAURANT_ID" valueNumeric="2"/>
+            <column name="BEGIN_TIME" valueDate="2016-06-08 12:52:27.639"/>
+            <column name="END_TIME" valueDate="2016-06-08 13:52:00.0"/>
+            <column name="END_MONEY" valueNumeric="100"/>
+            <column name="MEMBER_ACCOUNT" value="admin"/>
+            <column name="STATUS" value="已截止"/>
+            <column name="INFO"/>
+            <column name="RESTAURANT_NAME" value="悟饕池上飯包"/>
+        </insert>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470364485704-4" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="17"/>
+            <column name="NAME" value="吮指雙雞重量級XL套餐"/>
+            <column name="PRICE" valueNumeric="165"/>
+            <column name="RESTAURANT_ID" valueNumeric="5"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="18"/>
+            <column name="NAME" value="乳酪起司雞腿堡餐"/>
+            <column name="PRICE" valueNumeric="129"/>
+            <column name="RESTAURANT_ID" valueNumeric="5"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="19"/>
+            <column name="NAME" value="墨西哥莎莎霸王捲套餐"/>
+            <column name="PRICE" valueNumeric="119"/>
+            <column name="RESTAURANT_ID" valueNumeric="5"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="20"/>
+            <column name="NAME" value="義式香草紙包雞"/>
+            <column name="PRICE" valueNumeric="129"/>
+            <column name="RESTAURANT_ID" valueNumeric="5"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="1"/>
+            <column name="NAME" value="大麥克"/>
+            <column name="PRICE" valueNumeric="60"/>
+            <column name="RESTAURANT_ID" valueNumeric="1"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="2"/>
+            <column name="NAME" value="吉士堡"/>
+            <column name="PRICE" valueNumeric="50"/>
+            <column name="RESTAURANT_ID" valueNumeric="1"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="4"/>
+            <column name="NAME" value="麥脆雞"/>
+            <column name="PRICE" valueNumeric="50"/>
+            <column name="RESTAURANT_ID" valueNumeric="1"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="3"/>
+            <column name="NAME" value="勁辣雞腿堡"/>
+            <column name="PRICE" valueNumeric="60"/>
+            <column name="RESTAURANT_ID" valueNumeric="1"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="5"/>
+            <column name="NAME" value="醬燒豚肉飯"/>
+            <column name="PRICE" valueNumeric="85"/>
+            <column name="RESTAURANT_ID" valueNumeric="2"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="6"/>
+            <column name="NAME" value="正宗池上便當"/>
+            <column name="PRICE" valueNumeric="70"/>
+            <column name="RESTAURANT_ID" valueNumeric="2"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="7"/>
+            <column name="NAME" value="雞腿飯"/>
+            <column name="PRICE" valueNumeric="75"/>
+            <column name="RESTAURANT_ID" valueNumeric="2"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="8"/>
+            <column name="NAME" value="黃金排骨飯"/>
+            <column name="PRICE" valueNumeric="80"/>
+            <column name="RESTAURANT_ID" valueNumeric="2"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="9"/>
+            <column name="NAME" value="二男海鮮丼"/>
+            <column name="PRICE" valueNumeric="520"/>
+            <column name="RESTAURANT_ID" valueNumeric="3"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="10"/>
+            <column name="NAME" value="男子漢海鮮丼"/>
+            <column name="PRICE" valueNumeric="360"/>
+            <column name="RESTAURANT_ID" valueNumeric="3"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="11"/>
+            <column name="NAME" value="娘子海鮮丼"/>
+            <column name="PRICE" valueNumeric="320"/>
+            <column name="RESTAURANT_ID" valueNumeric="3"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="12"/>
+            <column name="NAME" value="荒海散壽司丼"/>
+            <column name="PRICE" valueNumeric="280"/>
+            <column name="RESTAURANT_ID" valueNumeric="3"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="13"/>
+            <column name="NAME" value="鮮蝦燒賣"/>
+            <column name="PRICE" valueNumeric="65"/>
+            <column name="RESTAURANT_ID" valueNumeric="4"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="14"/>
+            <column name="NAME" value="魚翅蒸餃"/>
+            <column name="PRICE" valueNumeric="65"/>
+            <column name="RESTAURANT_ID" valueNumeric="4"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="15"/>
+            <column name="NAME" value="牛肉腸粉"/>
+            <column name="PRICE" valueNumeric="65"/>
+            <column name="RESTAURANT_ID" valueNumeric="4"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="16"/>
+            <column name="NAME" value="鮮蝦腸粉"/>
+            <column name="PRICE" valueNumeric="65"/>
+            <column name="RESTAURANT_ID" valueNumeric="4"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="109"/>
+            <column name="NAME" value="布丁煉乳"/>
+            <column name="PRICE" valueNumeric="50"/>
+            <column name="RESTAURANT_ID" valueNumeric="10"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="107"/>
+            <column name="NAME" value="包心桂圓銀耳"/>
+            <column name="PRICE" valueNumeric="55"/>
+            <column name="RESTAURANT_ID" valueNumeric="10"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="108"/>
+            <column name="NAME" value="優格雪沙"/>
+            <column name="PRICE" valueNumeric="50"/>
+            <column name="RESTAURANT_ID" valueNumeric="10"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="110"/>
+            <column name="NAME" value="桂圓紫米粥"/>
+            <column name="PRICE" valueNumeric="65"/>
+            <column name="RESTAURANT_ID" valueNumeric="10"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="111"/>
+            <column name="NAME" value="蜜汁雞腿飯."/>
+            <column name="PRICE" valueNumeric="100"/>
+            <column name="RESTAURANT_ID" valueNumeric="11"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="112"/>
+            <column name="NAME" value="脆皮鴨腿飯"/>
+            <column name="PRICE" valueNumeric="100"/>
+            <column name="RESTAURANT_ID" valueNumeric="11"/>
+        </insert>
+        <insert tableName="PRODUCT">
+            <column name="ID" valueNumeric="113"/>
+            <column name="NAME" value="港式臘味飯"/>
+            <column name="PRICE" valueNumeric="90"/>
+            <column name="RESTAURANT_ID" valueNumeric="11"/>
+        </insert>
+    </changeSet>
+    <changeSet author="weblogic (generated)" id="1470364485704-5" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="RESTAURANT">
+            <column name="ID" valueNumeric="1"/>
+            <column name="NAME" value="麥當勞"/>
+            <column name="BRIEF"/>
+            <column name="ADDR" value="242新北市新莊區中正路617號"/>
+            <column name="PHONE" value="(02)2902-2181"/>
+            <column name="R_TYPE" value="速食"/>
+            <column name="IMAGE"/>
+        </insert>
+        <insert tableName="RESTAURANT">
+            <column name="ID" valueNumeric="2"/>
+            <column name="NAME" value="悟饕池上飯包"/>
+            <column name="BRIEF"/>
+            <column name="ADDR" value="242新北市新莊區中港一街27號"/>
+            <column name="PHONE" value="(02)2998-1191"/>
+            <column name="R_TYPE" value="便當"/>
+            <column name="IMAGE"/>
+        </insert>
+        <insert tableName="RESTAURANT">
+            <column name="ID" valueNumeric="3"/>
+            <column name="NAME" value="二男小家料理"/>
+            <column name="BRIEF"/>
+            <column name="ADDR" value="235新北市中和區中山路三段36號"/>
+            <column name="PHONE" value="(02)8227-5280"/>
+            <column name="R_TYPE" value="日式"/>
+            <column name="IMAGE"/>
+        </insert>
+        <insert tableName="RESTAURANT">
+            <column name="ID" valueNumeric="4"/>
+            <column name="NAME" value="黃師傅港式點心"/>
+            <column name="BRIEF"/>
+            <column name="ADDR" value="220新北市板橋區中正路166號"/>
+            <column name="PHONE" value="(02)2271-0250"/>
+            <column name="R_TYPE" value="點心"/>
+            <column name="IMAGE"/>
+        </insert>
+        <insert tableName="RESTAURANT">
+            <column name="ID" valueNumeric="5"/>
+            <column name="NAME" value="肯德基"/>
+            <column name="BRIEF"/>
+            <column name="ADDR" value="242新北市新莊區民安路157號"/>
+            <column name="PHONE" value="(02)2202-0124"/>
+            <column name="R_TYPE" value="速食"/>
+            <column name="IMAGE"/>
+        </insert>
+        <insert tableName="RESTAURANT">
+            <column name="ID" valueNumeric="11"/>
+            <column name="NAME" value="金源燒臘店"/>
+            <column name="BRIEF"/>
+            <column name="ADDR" value="台北市大安區瑞安街116號"/>
+            <column name="PHONE" value="(02)2325-4872"/>
+            <column name="R_TYPE" value="便當"/>
+            <column name="IMAGE"/>
+        </insert>
+        <insert tableName="RESTAURANT">
+            <column name="ID" valueNumeric="10"/>
+            <column name="NAME" value="魏姐包心粉圓"/>
+            <column name="BRIEF"/>
+            <column name="ADDR" value=" 108台北市萬華區桂林路1號號 1 樓"/>
+            <column name="PHONE" value="(02)2383-0116"/>
+            <column name="R_TYPE" value="點心"/>
+            <column name="IMAGE"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
