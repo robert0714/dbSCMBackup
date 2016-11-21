@@ -8,7 +8,8 @@
 	<properties>
 		<java.version>1.7</java.version>		
 		<project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
-		<mysql.version>5.1.36</mysql.version>
+		<mysql-driver.version>5.1.36</mysql-driver.version>
+		<liquibase.version>3.5.3</liquibase.version>
 	</properties>
 	<build>		
 		<resources>
@@ -25,29 +26,85 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
-			<!-- mvn liquibase:generateChangeLog  -->
-<!-- 			mvn  liquibase:generateChangeLog -Dliquibase.diffTypes=data  -->
-			
-			<!-- mvn liquibase:update -->
-			<!-- http://blog.kent-chiu.com/2014/08/30/liquibase-101.html -->
-			<!-- export MAVEN_OPTS='-Xmx12G -XX:+UseParallelGC -XX:+UseParallelOldGC  -XX:NewSize=4G -XX:MaxNewSize=4G' -->
-			<plugin>
-				<groupId>org.liquibase</groupId>
-				<artifactId>liquibase-maven-plugin</artifactId>
-				<version>3.5.1</version>
-				<configuration>
-					<propertyFileWillOverride>true</propertyFileWillOverride>
-					<propertyFile>src/main/resources/liquibase.properties</propertyFile>
-					<fork>true</fork>
-					<meminitial>1024m</meminitial>
-					<maxmem>4096m</maxmem>
-<!-- 					如果式要匯出schema則要把以下排除註解掉 -->
-<!-- 請參考https://liquibase.jira.com/browse/CORE-875 -->
-					<diffExcludeObjects>table:SOA_MON_BW_ENG,table:SOA_MON_EMS,table:SOA_MON_FILE_SYS,table:SOA_MON_MEM,table:SOA_MON_PROCS</diffExcludeObjects>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
+	<profiles>
+	<!-- 	mvn -P bankwiz -->
+		<profile>
+			<id>bankwiz</id>
+			<build>
+				<defaultGoal>liquibase:generateChangeLog</defaultGoal>
+				<plugins>
+					<!-- mvn liquibase:generateChangeLog 匯出Schema-->
+					<!-- mvn liquibase:generateChangeLog -Dliquibase.diffTypes=data 匯出資料-->
+
+					<!-- mvn liquibase:update 將資料匯入資料庫  -->
+					<!-- http://blog.kent-chiu.com/2014/08/30/liquibase-101.html -->
+					<!-- export MAVEN_OPTS='-Xmx12G -XX:+UseParallelGC -XX:+UseParallelOldGC -XX:NewSize=4G -XX:MaxNewSize=4G' -->
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/config/bankwiz/liquibase.properties</propertyFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+							<!-- 如果式要匯出schema則要把以下排除註解掉 -->
+							<!-- 請參考https://liquibase.jira.com/browse/CORE-875 -->
+							<diffExcludeObjects>table:SOA_MON_BW_ENG,table:SOA_MON_EMS,table:SOA_MON_FILE_SYS,table:SOA_MON_MEM,table:SOA_MON_PROCS</diffExcludeObjects>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- 	mvn -P practice01 -->
+<!-- 		http://www.it610.com/article/3566169.htm -->
+		<profile>
+			<id>practice01</id>
+			<build>
+				<defaultGoal>liquibase:update</defaultGoal>
+				<plugins>					 
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/config/practice01/liquibase.properties</propertyFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- 	mvn -P practice01RollbackCount1 -->
+<!-- 		http://www.it610.com/article/3566169.htm -->
+		<profile>
+			<id>practice01RollbackCount1</id>
+			<build>
+				<defaultGoal>liquibase:rollback</defaultGoal>
+				<plugins>					 
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/config/practice01/liquibase.properties</propertyFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+							<rollbackCount>1</rollbackCount>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 	<dependencies>
 		<dependency>
 			<groupId>com.oracle</groupId>
@@ -57,7 +114,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>${mysql.version}</version>
+			<version>${mysql-driver.version}</version>
 		</dependency>
 		<dependency>
     			<groupId>org.postgresql</groupId>
