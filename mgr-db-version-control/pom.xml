@@ -83,6 +83,7 @@
 		</profile>
 		<!-- 	mvn -P practice01RollbackCount1 -->
 <!-- 		http://www.it610.com/article/3566169.htm -->
+<!-- http://shengwangi.blogspot.tw/2016/04/liquibase-helloworld-example.html -->
 		<profile>
 			<id>practice01RollbackCount1</id>
 			<build>
