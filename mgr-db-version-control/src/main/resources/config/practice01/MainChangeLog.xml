@@ -5,10 +5,10 @@
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
                   
-  <include  file="src/main/resources/config/practice01/TestDbChangeLog_V1.0.sql"/>
+  <include  file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/config/practice01/TestDbChangeLog_V1.0.sql"/>
   <!--我們第一個版本檔案位置 -->
   
   
-  <include  file="src/main/resources/config/practice01/TestDbChangeLog_V1.1.sql"/> 
+  <include  file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/config/practice01/TestDbChangeLog_V1.1.sql"/> 
     <!--我們第二個版本檔案位置 --> 
 </databaseChangeLog>
