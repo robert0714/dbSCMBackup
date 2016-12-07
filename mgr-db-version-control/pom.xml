@@ -423,10 +423,34 @@
 			</build>
 		</profile>
 		
-		<!-- mvn -P test02MergeColumnsUpdate -->
-		<!-- 	依據changeLogFile的07-merge-columns.xml合併兩個欄位資料(address_data.street_name,address_data.street_number 變成street)  -->
+		<!-- mvn -P test02Validate -->
+		<!-- 	依據changeLogFile的changelog.xml進行驗證  -->
+<!-- 		無法執行 Maintenance Commands -->
 		<profile>
-			<id>test02MergeColumnsUpdate</id>
+			<id>test02Validate</id>
+			<build>
+				<defaultGoal>liquibase:validate</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/changelog.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- mvn -P test02ChangelogUpdate -->
+		<!-- 	依據changeLogFile的changelog.xml進行修改DB  -->
+		<profile>
+			<id>test02ChangelogUpdate</id>
 			<build>
 				<defaultGoal>liquibase:update</defaultGoal>
 				<plugins>
@@ -437,10 +461,82 @@
 						<configuration>
 							<propertyFileWillOverride>true</propertyFileWillOverride>
 							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
-							<changeLogFile>src/main/resources/test02/db/changelog/07-merge-columns.xml</changeLogFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/changelog.xml</changeLogFile>
 							<fork>true</fork>
 							<meminitial>1024m</meminitial>
 							<maxmem>4096m</maxmem> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- mvn -P test02dbDoc -->
+		<!-- 	依據changeLogFile的changelog.xml進行修改DB  -->
+		<profile>
+			<id>test02dbDoc</id>
+			<build>
+				<defaultGoal>liquibase:dbDoc</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/changelog.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+							 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- mvn -P test02DiffPrepare -->
+		<!-- 	依據changeLogFile的00-init.xml比對準備  -->
+		<profile>
+			<id>test02DiffPrepare</id>
+			<build>
+				<defaultGoal>liquibase:update</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/00-init.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+							<url>jdbc:h2:file:~/demo-init</url> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- mvn -P test02Diff -->
+		<!-- 	依據changeLogFile的changelog.xml進行修改DB  -->
+		<profile>
+			<id>test02Diff</id>
+			<build>
+				<defaultGoal>liquibase:diff</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile> 
+							<changeLogFile>src/main/resources/test02/db/changelog/diff.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+							<referenceUrl>jdbc:h2:file:~/demo-init</referenceUrl> 
 						</configuration>
 					</plugin>
 				</plugins>
