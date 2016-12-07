@@ -352,6 +352,100 @@
 				</plugins>
 			</build>
 		</profile>
+		
+		<!-- mvn -P test02AddForeignKeysUpdate -->
+		<!-- 	依據changeLogFile的05-add-foreign-keys.xml增加foreingn-key  -->
+		<profile>
+			<id>test02AddForeignKeysUpdate</id>
+			<build>
+				<defaultGoal>liquibase:update</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/05-add-foreign-keys.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- mvn -P test02ChangeColumnTypeUpdate -->
+		<!-- 	依據changeLogFile的06-change-column-type.xml改變tableName="phone_data" columnName="phone" newDataType="VARCHAR(32)"  -->
+		<profile>
+			<id>test02ChangeColumnTypeUpdate</id>
+			<build>
+				<defaultGoal>liquibase:update</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/06-change-column-type.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- mvn -P test02MergeColumnsUpdate -->
+		<!-- 	依據changeLogFile的07-merge-columns.xml合併兩個欄位資料(address_data.street_name,address_data.street_number 變成street)  -->
+		<profile>
+			<id>test02MergeColumnsUpdate</id>
+			<build>
+				<defaultGoal>liquibase:update</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/07-merge-columns.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<!-- mvn -P test02MergeColumnsUpdate -->
+		<!-- 	依據changeLogFile的07-merge-columns.xml合併兩個欄位資料(address_data.street_name,address_data.street_number 變成street)  -->
+		<profile>
+			<id>test02MergeColumnsUpdate</id>
+			<build>
+				<defaultGoal>liquibase:update</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/07-merge-columns.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
 	<dependencies>
 		<dependency>
