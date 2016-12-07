@@ -8,15 +8,18 @@
     <changeSet id="2" author="pkorobeinikov">
         <insert tableName="person">
             <column name="name" value="Person 1"/>
+            <column name="id" value="1"/>
         </insert>
         <insert tableName="person">
             <column name="name" value="Person 2"/>
+             <column name="id" value="2"/>             
         </insert>
         <insert tableName="person">
             <column name="name" value="Person 3"/>
+            <column name="id" value="3"/>
         </insert>
         <rollback>
-            <delete tableName="person"/>
+            <delete tableName="person"/> 
         </rollback>
     </changeSet>
 </databaseChangeLog>

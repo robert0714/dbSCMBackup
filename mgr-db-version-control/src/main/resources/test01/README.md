@@ -13,5 +13,5 @@ DB settings:
     ip: 10.0.0.20
     USERNAME=app 
     PASSWORD=app
-    URL=jdbc:postgresql://localhost:5432/app
+    URL=jdbc:postgresql://10.0.0.20:5432/app
     driver=org.postgresql.Driver

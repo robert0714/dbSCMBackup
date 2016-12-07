@@ -121,6 +121,27 @@
 				</plugins>
 			</build>
 		</profile>
+		<!-- 	mvn -P test01migrate --> 
+		<profile>
+			<id>test01migrate</id>
+			<build>
+				<defaultGoal>liquibase:migrate</defaultGoal>
+				<plugins>					 
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test01/liquibase.properties</propertyFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
 	<dependencies>
 		<dependency>
