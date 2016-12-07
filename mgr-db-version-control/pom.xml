@@ -304,6 +304,54 @@
 				</plugins>
 			</build>
 		</profile>
+		<!-- mvn -P test02SplitTableRollbackSQLTagDemo-1.0 -->
+		<!-- 	依據changeLogFile的04-split-table.xml產生rollback的SQL到tag demo-1.0   -->
+		<profile>
+			<id>test02SplitTableRollbackSQLTagDemo-1.0</id>
+			<build>
+				<defaultGoal>liquibase:rollbackSQL</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/04-split-table.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+							<rollbackTag>demo-1.0</rollbackTag> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- mvn -P test02SplitTableRollbackTagDemo-1.0 -->
+		<!-- 	依據changeLogFile的04-split-table.xml 回溯rollback的SQL到tag demo-1.0   -->
+		<profile>
+			<id>test02SplitTableRollbackTagDemo-1.0</id>
+			<build>
+				<defaultGoal>liquibase:rollback</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/04-split-table.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+							<rollbackTag>demo-1.0</rollbackTag> 
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
 	<dependencies>
 		<dependency>
