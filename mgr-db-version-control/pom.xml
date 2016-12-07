@@ -235,6 +235,75 @@
 				</plugins>
 			</build>
 		</profile>
+		<!-- mvn -P test02AddNotNullConstraintUpdate -->
+		<!-- 	依據changeLogFile的02-add-not-null-constraint.xml更新資料庫 (使欄位firstname，lastname為not nullable)  -->
+		<profile>
+			<id>test02AddNotNullConstraintUpdate</id>
+			<build>
+				<defaultGoal>liquibase:update</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/02-add-not-null-constraint.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- mvn -P test02TagDatabaseUpdate -->
+		<!-- 	依據changeLogFile的03-tag-database.xml更新資料庫 (使DATACHANGELOG上產生一筆名為demo-1.0的tag紀錄)  -->
+		<profile>
+			<id>test02TagDatabaseUpdate</id>
+			<build>
+				<defaultGoal>liquibase:update</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/03-tag-database.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- mvn -P test02SplitTableUpdate -->
+		<!-- 	依據changeLogFile的04-split-table.xml更新資料庫 (將addressbook_entries分割成address_data,phone_data兩張table)  -->
+		<profile>
+			<id>test02SplitTableUpdate</id>
+			<build>
+				<defaultGoal>liquibase:update</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>${liquibase.version}</version>
+						<configuration>
+							<propertyFileWillOverride>true</propertyFileWillOverride>
+							<propertyFile>src/main/resources/test02/liquibase.properties</propertyFile>
+							<changeLogFile>src/main/resources/test02/db/changelog/04-split-table.xml</changeLogFile>
+							<fork>true</fork>
+							<meminitial>1024m</meminitial>
+							<maxmem>4096m</maxmem>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
 	<dependencies>
 		<dependency>
