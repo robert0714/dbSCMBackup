@@ -68,6 +68,7 @@
 							<fork>true</fork>
 							<meminitial>1024m</meminitial>
 							<maxmem>4096m</maxmem>
+							<diffTypes>data</diffTypes>
 							<!-- 如果式要匯出schema則要把以下排除註解掉 -->
 							<!-- 請參考https://liquibase.jira.com/browse/CORE-875 -->
 							<diffExcludeObjects>table:SOA_MON_BW_ENG,table:SOA_MON_EMS,table:SOA_MON_FILE_SYS,table:SOA_MON_MEM,table:SOA_MON_PROCS</diffExcludeObjects>

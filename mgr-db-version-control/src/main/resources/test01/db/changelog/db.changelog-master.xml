@@ -4,13 +4,13 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-
-    <include file="src/main/resources/test01/db/changelog/db.changelog-v1-create-table-person.xml"/>
-    <include file="src/main/resources/test01/db/changelog/db.changelog-v2-add-people.xml"/>
-    <include file="src/main/resources/test01/db/changelog/db.changelog-v3-create-table-document.xml"/>
-    <include file="src/main/resources/test01/db/changelog/db.changelog-v4-add-documents.sql"/>
-    <include file="src/main/resources/test01/db/changelog/db.changelog-v5-create-type-status.xml"/>
-    <include file="src/main/resources/test01/db/changelog/db.changelog-v6-alter-table-document-add-column-status.yml"/>
-    <include file="src/main/resources/test01/db/changelog/db.changelog-v7-alter-type-status-add-in-progress.sql"/>
-    <include file="src/main/resources/test01/db/changelog/db.changelog-v8-create-function-person-greeting.xml"/>
+ 
+    <include file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/test01/db/changelog/db.changelog-v1-create-table-person.xml"/>
+    <include file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/test01/db/changelog/db.changelog-v2-add-people.xml"/>
+    <include file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/test01/db/changelog/db.changelog-v3-create-table-document.xml"/>
+    <include file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/test01/db/changelog/db.changelog-v4-add-documents.sql"/>
+    <include file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/test01/db/changelog/db.changelog-v5-create-type-status.xml"/>
+    <include file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/test01/db/changelog/db.changelog-v6-alter-table-document-add-column-status.yml"/>
+    <include file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/test01/db/changelog/db.changelog-v7-alter-type-status-add-in-progress.sql"/>
+    <include file="/sharedData/robertData/Documents/workspaces/workspace-sts-3.8.2/dbSCMBackup/mgr-db-version-control/src/main/resources/test01/db/changelog/db.changelog-v8-create-function-person-greeting.xml"/>
 </databaseChangeLog>
