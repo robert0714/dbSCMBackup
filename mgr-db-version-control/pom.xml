@@ -36,9 +36,10 @@
 					<fork>true</fork>
 					<meminitial>1024m</meminitial>
 					<maxmem>4096m</maxmem>
+					<diffTypes>data</diffTypes>
 					<!-- 如果式要匯出schema則要把以下排除註解掉 -->
 					<!-- 請參考https://liquibase.jira.com/browse/CORE-875 -->
-					<diffExcludeObjects>table:SOA_MON_BW_ENG,table:SOA_MON_EMS,table:SOA_MON_FILE_SYS,table:SOA_MON_MEM,table:SOA_MON_PROCS</diffExcludeObjects>
+					<diffExcludeObjects>table:SOA_DATAMASK,table:SOA_MON_BW_ENG,table:SOA_MON_BW_ENG,table:SOA_MON_EMS,table:SOA_MON_EMS_DURABLE,table:SOA_MON_EMS_QUEUE,table:SOA_MON_EMS_TOPIC,table:SOA_MON_FILE_SYS,table:SOA_MON_MEM,table:SOA_MON_PROCS,table:SOA_MSG_RUT_TIME_LOGS</diffExcludeObjects>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -71,7 +72,7 @@
 							<diffTypes>data</diffTypes>
 							<!-- 如果式要匯出schema則要把以下排除註解掉 -->
 							<!-- 請參考https://liquibase.jira.com/browse/CORE-875 -->
-							<diffExcludeObjects>table:SOA_MON_BW_ENG,table:SOA_MON_EMS,table:SOA_MON_FILE_SYS,table:SOA_MON_MEM,table:SOA_MON_PROCS</diffExcludeObjects>
+							<diffExcludeObjects>table:SOA_DATAMASK,table:SOA_MON_BW_ENG,table:SOA_MON_BW_ENG,table:SOA_MON_EMS,table:SOA_MON_EMS_DURABLE,table:SOA_MON_EMS_QUEUE,table:SOA_MON_EMS_TOPIC,table:SOA_MON_FILE_SYS,table:SOA_MON_MEM,table:SOA_MON_PROCS,table:SOA_MSG_RUT_TIME_LOGS</diffExcludeObjects>
 						</configuration>
 					</plugin>
 				</plugins>
