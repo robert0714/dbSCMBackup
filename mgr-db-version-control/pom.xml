@@ -8,7 +8,7 @@
 	<properties>
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
-		<mysql-driver.version>5.1.36</mysql-driver.version>
+		<mysql-driver.version>8.0.16</mysql-driver.version>
 		<liquibase.version>3.5.3</liquibase.version>
 	</properties>
 	<build>
